@@ -33,10 +33,17 @@ int List::value(void *ptr) {
 
 void List::insert_after(int value, void *ptr) {
   // TODO
+  Node *newNode = new Node();
+  newNode->_value = value;
+
+  if (ptr == nullptr) {  // List empty
+    _first = newNode->value;
+  }
 }
 
 void List::delete_after(void *ptr) {
   // TODO
+
 }
 
 void List::push_front(int value) {
